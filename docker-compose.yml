@@ -7,17 +7,17 @@ services:
       - ./docker/db/mysql_data:/home/mysql
       #- ./docker/db/mysql_data:/var/lib/mysql
     ports:
-      - "3307:3306"
+      - "3308:3306"
     hostname: localhost
     environment:
       MYSQL_ROOT_PASSWORD: 'root'
     # 所属するネットワークとIPを指定
     networks:
       shared-nw201:
-        ipv4_address: 192.168.201.2
+        ipv4_address: 192.168.201.12
       #br0:
       #  # このIPアドレスがデータベースホスト名になる ( localhost → 192.168.201.2)
-      #  ipv4_address: 192.168.201.2
+      #  ipv4_address: 192.168.201.12
   web:
     container_name: laravel_apache_php
     build: ./docker/web
@@ -29,7 +29,7 @@ services:
     #  - DB_USERNAME=root
     #  - DB_PASSWORD=root
     ports:
-      - '8091:8001'
+      - '8092:8001'
     #  - '443:443'
     #  - '80:80'
     links:
@@ -42,7 +42,7 @@ services:
     # 所属するネットワークとIPを指定
     networks:
       shared-nw201:
-        ipv4_address: 192.168.201.3
+        ipv4_address: 192.168.201.13
   phpmyadmin:
     container_name: laravel_phpmyadmin
     image: phpmyadmin/phpmyadmin
@@ -55,15 +55,15 @@ services:
     links:
       - mysql-laravel
     ports:
-      - 8087:80
+      - 8088:80
     volumes:
       - /sessions
     # 所属するネットワークとIPを指定
     networks:
       shared-nw201:
-        ipv4_address: 192.168.201.4
+        ipv4_address: 192.168.201.14
       #br0:
-      #  ipv4_address: 192.168.201.4
+      #  ipv4_address: 192.168.201.14
 
 # 新規ブリッチを定義
 networks:
