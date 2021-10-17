@@ -40,3 +40,6 @@
 192.168.201.1 - - [15/Oct/2021:04:18:17 +0000] "-" 408 0 "-" "-"
 192.168.201.1 - - [15/Oct/2021:04:22:37 +0000] "GET / HTTP/1.1" 404 1848 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
 192.168.201.1 - - [15/Oct/2021:04:22:38 +0000] "GET /favicon.ico HTTP/1.1" 304 179 "http://localhost:8092/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+192.168.201.1 - - [15/Oct/2021:04:42:54 +0000] "GET / HTTP/1.1" 200 1941 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+192.168.201.1 - - [15/Oct/2021:04:42:54 +0000] "GET /favicon.ico HTTP/1.1" 304 178 "http://localhost:8092/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
+192.168.201.1 - - [15/Oct/2021:04:43:45 +0000] "-" 408 0 "-" "-"
